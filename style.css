@@ -105,3 +105,19 @@ h5 {
   opacity: 1;
   transform: translateY(0);
 }
+/* Gallery Hover Effect */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.9);
+}
