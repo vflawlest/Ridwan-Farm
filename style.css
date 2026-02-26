@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: clamp(14px, 1.1vw, 18px);
+}
+
+.navbar-brand {
+  font-size: clamp(18px, 2vw, 24px);
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1695544941269-45926ade4a19?q=80&w=2664&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: clamp(80px, 15vh, 160px) 0;
+}
+
+.hero h1 {
+  font-size: clamp(26px, 5vw, 56px);
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+.section-padding {
+  padding: clamp(50px, 8vw, 100px) 0;
+}
+
+h2 {
+  font-size: clamp(22px, 3.5vw, 36px);
+}
+
+h5 {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.icon-box {
+  font-size: clamp(28px, 4vw, 45px);
+}
+
+.card-text {
+  font-size: clamp(14px, 1.5vw, 17px);
+}
+/* Floating WhatsApp */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.floating-wa:hover {
+  transform: scale(1.05);
+  background-color: #1ebe5d;
+}
+
+.wa-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.wa-icon {
+  font-size: 20px;
+}
+/* ===== Fade In (Hero) ===== */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Scroll Reveal Animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
